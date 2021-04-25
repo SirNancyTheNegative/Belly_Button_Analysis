@@ -65,6 +65,7 @@ function buildCharts(sample) {
     var result = resultArray[0];
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = result.otu_ids;
+    otu_ids = otu_ids.map(id => "OTU " + id);
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values;
 
@@ -86,8 +87,7 @@ function buildCharts(sample) {
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       yaxis: {
-          tickvals: yticks,
-          constrain: "domain"
+          tickvals: yticks
       }
     };
     // 10. Use Plotly to plot the data with the layout. 

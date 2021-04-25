@@ -79,7 +79,7 @@ function buildCharts(sample) {
     var barData = [{
       x: sample_values,
       y: otu_ids,
-      hover_data = otu_labels,
+      text = otu_labels,
       type:"bar"
     }];
     // 9. Create the layout for the bar chart. 

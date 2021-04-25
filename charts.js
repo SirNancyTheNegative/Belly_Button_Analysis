@@ -85,7 +85,8 @@ function buildCharts(sample) {
           type: 'sort',
           target: 'y',
           order: 'descending'
-      }
+      },
+      orientation: 'h'
     }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {

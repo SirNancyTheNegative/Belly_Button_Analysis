@@ -87,7 +87,7 @@ function buildCharts(sample) {
       title: "Top 10 Bacteria Cultures Found",
       yaxis: {
           ticks: yticks,
-          autotypenumbers: false
+          constrain: "domain"
       }
     };
     // 10. Use Plotly to plot the data with the layout. 

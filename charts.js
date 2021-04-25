@@ -95,7 +95,7 @@ function buildCharts(sample) {
       yaxis: {
           tickvals: yticks
       },
-      paper_bgcolor: rgba(255, 228, 181, 0.794)
+      paper_bgcolor: "#EFD4A5"
     };
     // Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar',barData,barLayout);
@@ -120,7 +120,7 @@ function buildCharts(sample) {
         autoexpand: true
       },
       xaxis: {title: "OTU ID"},
-      paper_bgcolor: rgba(255, 228, 181, 0.794)
+      paper_bgcolor: "#EFD4A5"
     };
 
     // Use Plotly to plot the data with the layout.
@@ -151,7 +151,7 @@ function buildCharts(sample) {
       width: 600, 
       height: 500, 
       margin: { t: 0, b: 0 },
-      paper_bgcolor: rgba(255, 228, 181, 0.794)
+      paper_bgcolor: "#EFD4A5"
     };
 
     // 6. Use Plotly to plot the gauge data and layout.

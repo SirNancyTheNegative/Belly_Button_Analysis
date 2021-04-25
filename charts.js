@@ -86,7 +86,7 @@ function buildCharts(sample) {
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       yaxis: {
-          tickvals: yticks
+          ylabels: yticks
       }
     };
     // 10. Use Plotly to plot the data with the layout. 

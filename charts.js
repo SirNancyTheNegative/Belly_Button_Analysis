@@ -80,7 +80,12 @@ function buildCharts(sample) {
       x: sample_values,
       y: otu_ids,
       hover_data: otu_labels,
-      type:"bar"
+      type:"bar",
+      transforms: {
+          type: 'sort',
+          target: 'y',
+          order: 'descending'
+      }
     }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {

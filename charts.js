@@ -64,7 +64,7 @@ function buildCharts(sample) {
     //  5. Create a variable that holds the first sample in the array.
     var result = resultArray[0];
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
-    var otu_ids = result.otu_ids;
+    var otu_ids = result.map(otu => otu.otu_ids.toString());
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values;
 
@@ -78,7 +78,7 @@ function buildCharts(sample) {
     var barData = [{
       x: sample_values.slice(0,10),
       y: otu_ids.slice(0,10),
-      hover_data: otu_labels.slice(0,10),
+      text: otu_labels.slice(0,10),
       type:"bar",
       orientation: 'h'
     }];

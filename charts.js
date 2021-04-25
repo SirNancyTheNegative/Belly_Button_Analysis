@@ -86,7 +86,7 @@ function buildCharts(sample) {
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       yaxis: {
-          ticks: yticks,
+          tickvals: yticks,
           constrain: "domain"
       }
     };
